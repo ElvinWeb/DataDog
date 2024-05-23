@@ -1,0 +1,40 @@
+.learn-more-bg {
+  background-image: url("https://imgix.datadoghq.com/img/homepage/reinvent_high_res_banner_desktop.png"),
+    linear-gradient(360deg, #8904ff, #110617);
+  background-size: cover;
+}
+.lm-py {
+  padding-top: 5.25rem;
+  padding-bottom: 5.25rem;
+}
+.learn-more-bg .learn-more-content {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.learn-more-content h2 {
+  font-weight: 700;
+}
+.learn-more-content p {
+  margin-top: 0.625rem;
+  font-weight: 400;
+  text-align: center;
+  font-size: 17px;
+  line-height: 28px;
+  color: rgb(255 255 255 / 1);
+}
+@media (min-width: 768px) {
+  .lm-py {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .learn-more-content p {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  .lm-py {
+    padding-top: 5rem;
+    padding-bottom: 6.6rem;
+  }
+}

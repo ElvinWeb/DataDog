@@ -1,0 +1,55 @@
+.infrastructure {
+  background: #000;
+  overflow: hidden;
+  color: #fff;
+  min-height: 650px;
+}
+
+.video-container img {
+  height: 300px;
+  max-width: 100%;
+}
+.infrastructure .title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.infrastructure .sub-title {
+  font-size: 22px;
+  line-height: 25px;
+}
+.infrastructure .link {
+  text-decoration: none;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+}
+.infrastructure .row {
+  padding: 50px 0px;
+}
+.infr-list {
+  padding-left: 0;
+}
+.infr-list .infr-item {
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  padding-bottom: 10px;
+}
+.infr-list .view-all {
+  margin-top: 80px;
+}
+.view-all .btn-view {
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1200px) {
+  .infr-list .infr-item {
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 5px;
+  }
+}

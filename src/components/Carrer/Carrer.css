@@ -1,0 +1,13 @@
+.carrer-relative-row {
+  background-color: rgba(246, 246, 246, 1) !important;
+}
+.carrer-text {
+  justify-content: center;
+  align-items: center;
+}
+.carrer-content .link {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000;
+}

@@ -1,0 +1,43 @@
+.blog-relative-row {
+  background: linear-gradient(45deg, #5000bf 0%, #bf00ff 100%) !important;
+}
+.blog-text {
+  justify-content: center;
+  align-items: center;
+}
+.blog-content .link {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.blog-content .small {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.blog-content .post-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+.blog-content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .blog-content .small {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog-content .post-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .blog-content p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
