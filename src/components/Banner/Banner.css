@@ -1,0 +1,55 @@
+.home-banner {
+  background-image: url("../../images/reduce_it_costs_ebook_banner_desktop_v1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  height: 270px;
+  width: 100%;
+}
+.banner-content {
+  padding: 55px 40px;
+}
+.text-white {
+  color: #fff;
+}
+.home-banner .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.home-banner .sub-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 20px 0px 45px 0px;
+}
+.btn-outline {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+.btn-get {
+  font-size: 14px !important;
+  font-weight: 600;
+  padding: 6px 11px;
+  border-radius: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .home-banner .sub-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .home-banner .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .btn-get {
+    font-size: 18px !important;
+    padding: 11px 20px 12px;
+    border-radius: 2px;
+  }
+}
