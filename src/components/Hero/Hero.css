@@ -25,15 +25,16 @@ header {
 .content .title {
   font-size: 60px;
   line-height: 68px;
-  font-weight: 350;
+  font-weight: 300;
 }
 .content .sub-title {
-  line-height: 30px;
   line-height: 38px;
   font-weight: 300;
   margin-top: 25px;
 }
 .button-group {
+  display: inline-flex;
+  flex-direction: row;
   margin-top: 30px;
 }
 .btn-free,
@@ -152,7 +153,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .company-logos {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .header .video-poster .video-bg {
     height: 920.25px;
@@ -160,5 +161,68 @@ header {
   .header .main-customers {
     bottom: 0px;
     right: 90px;
+  }
+  .content .title {
+    font-size: 30px;
+  }
+  .content {
+    position: relative;
+  }
+  .content .sub-title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .video-poster {
+    display: none;
+  }
+  .main-animation-dash {
+    display: block !important;
+  }
+  .main-content .button-group {
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -420px;
+  }
+  .main-content .button-group a {
+    width: 550px;
+  }
+  .mobile-dash img {
+    width: 100%;
+  }
+  header {
+    height: 850px;
+  }
+}
+@media only screen and (max-width: 564px) {
+  .main-content .button-group {
+    align-items: center;
+  }
+  .main-content .button-group a {
+    width: 360px;
+  }
+  .btn-gradient {
+    margin-right: 0px;
+  }
+  .header .main-customers {
+    right: 15px;
+  }
+  .company-logos .logo {
+    width: 90px;
+  }
+  header {
+    height: 870px;
+  }
+  .main-content .button-group {
+    bottom: -400px;
+  }
+  .content .title {
+    font-size: 25px;
+  }
+  .content .sub-title {
+    font-size: 20px;
   }
 }

@@ -11,15 +11,15 @@ const HeroContent = () => {
               See inside any stack, any app, at any scale, anywhere.
             </h3>
             <div className="button-group text-center">
-              <button href="#" className="btn-free btn-gradient">
+              <a href="./#" className="btn-free btn-gradient">
                 FREE TRIAL
-              </button>
-              <button href="#" className="btn-show btn-video">
+              </a>
+              <a href="./#" className="btn-show btn-video">
                 <div className="d-flex justify-content-center align-items-center">
                   <i className="fa-solid fa-circle-play me-1"></i>
                   SEE THE PLATFORM
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </div>
