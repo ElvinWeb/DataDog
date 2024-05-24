@@ -2,13 +2,21 @@ header {
   background-repeat: repeat-y;
   background-position: 50% 0;
   background-image: url("../../images/bg_gradient_956.jpg");
-  padding: 80px 0;
+  height: 900px;
+  padding: 20px 0;
+  position: relative;
+}
+.header .main-content {
+  position: relative;
 }
 .header .main-customers {
   padding: 50px 0px;
+  position: absolute;
+  bottom: -10px;
+  right: 80px;
 }
 .main-customers .title {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
 }
 .content {
@@ -28,49 +36,129 @@ header {
 .button-group {
   margin-top: 30px;
 }
-.btn {
+.btn-free,
+.btn-show {
   font-weight: 600;
   font-size: 16px;
-  padding: 7px 20px 8px;
+  padding: 10px 20px 10px;
   border-width: 1px;
   width: 220px;
   cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+  transition: all 0.2s ease;
 }
 
 .btn-gradient {
   color: #fff;
-  background: #c024b6;
   background: linear-gradient(45deg, #c024b6 0%, #3023ae 100%);
+  border: none;
   margin-right: 20px;
+}
+.btn-gradient:hover {
+  background: #fff;
+  border: 1px solid #c024b6;
+  color: #c024b6;
 }
 .btn-video {
   color: #632ca6;
   border: 1px solid #632ca6;
 }
+.btn-video:hover {
+  background: #632ca6;
+  color: #fff;
+}
 .text-gray {
   color: #888;
 }
-.company-logos a img {
-  max-width: 100px;
+.company-logos {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.25rem;
 }
-@media screen and (min-width: 992px) {
-  /* .header::before {
-    content: "";
-    display: inline-block;
-    height: 450px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-  } */
+.company-logos .logo {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+.company-logos .logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header .video-poster {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 790.25px;
+  max-width: 1700px;
+  margin: 0 auto;
+  right: 0;
+}
+.header .video-poster .video-bg {
+  position: absolute;
+  z-index: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  top: -40px;
+  left: 0;
+  min-width: 100%;
+  max-width: 100%;
+  height: 900.25px;
+}
+@media only screen and (min-width: 992px) {
   .header {
     background-size: 100% 100%;
-    height: 740px;
     overflow: hidden;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .btn {
     padding: 11px 20px 12px;
+  }
+  .company-logos {
+    gap: 2.75rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .company-logos {
+    gap: 3.75rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content .title {
+    font-size: 40px;
+  }
+  .company-logos .logo {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .company-logos {
+    flex-wrap: nowrap;
+  }
+  .header .video-poster .video-bg {
+    height: 920.25px;
+  }
+  .header .main-customers {
+    bottom: 0px;
+    right: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .company-logos {
+    flex-wrap: nowrap;
+  }
+  .header .video-poster .video-bg {
+    height: 920.25px;
+  }
+  .header .main-customers {
+    bottom: 0px;
+    right: 90px;
   }
 }

@@ -11,6 +11,12 @@
   font-weight: 600;
   color: #fff;
 }
+.blog-content .link i {
+  transition: all 0.2s ease;
+}
+.blog-content .link:hover i {
+  margin-left: 2px;
+}
 .blog-content .small {
   font-size: 12px;
   line-height: 18px;
@@ -53,6 +59,22 @@
     width: 85%;
   }
   .blog-content {
-    margin: 25px;
+    margin: 30px;
+  }
+  .blog-img img {
+    max-width: 101.5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-content p {
+    width: 100%;
+  }
+  .blog-img img {
+    max-width: 101.7%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .blog-img img {
+    max-width: 102%;
   }
 }

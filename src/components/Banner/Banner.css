@@ -19,8 +19,8 @@
   line-height: 22px;
 }
 .home-banner .sub-title {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
   line-height: 32px;
   margin: 20px 0px 30px 0px;
 }
@@ -29,17 +29,21 @@
   border: 1px solid #fff;
   background-color: transparent;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-get:hover {
+  background: #fff;
+  color: #632ca6;
 }
 .btn-get {
   font-size: 14px !important;
   font-weight: 600;
   padding: 6px 11px;
-  border-radius: 4px;
   display: inline-flex;
 }
 @media only screen and (min-width: 768px) {
   .home-banner .sub-title {
-    font-size: 36px;
+    font-size: 31px;
     line-height: 40px;
   }
 }
@@ -51,7 +55,7 @@
   .btn-get {
     font-size: 18px !important;
     padding: 11px 20px 12px;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 }
 @media only screen and (max-width: 1200px) {

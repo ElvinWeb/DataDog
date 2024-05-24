@@ -19,6 +19,12 @@
   font-weight: 600;
   color: #000;
 }
+.carrer-content .link i {
+  transition: all 0.2s ease;
+}
+.carrer-content .link:hover i {
+  margin-left: 2px;
+}
 .carrer-content .carrer-title {
   font-size: 28px;
   font-weight: 600;
@@ -47,7 +53,7 @@
 
 @media only screen and (max-width: 1200px) {
   .carrer-img img {
-    max-width: 102.3%;
+    max-width: 102%;
   }
   .carrer-content p {
     width: 360px;
@@ -55,19 +61,30 @@
 }
 
 @media only screen and (max-width: 992px) {
-  
-  .carrer-container{
+  .carrer-container {
     flex-direction: column-reverse;
   }
   .carrer-img img {
-    width: 101.4%;
+    width: 101.2%;
   }
 
   .carrer-content p {
     width: 85%;
   }
   .carrer-content {
-    margin: 25px;
+    margin: 30px;
   }
-  
+}
+@media only screen and (max-width: 767px) {
+  .carrer-content p {
+    width: 100%;
+  }
+  .carrer-img img {
+    width: 101.7%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .carrer-img img {
+    width: 102.5%;
+  }
 }
