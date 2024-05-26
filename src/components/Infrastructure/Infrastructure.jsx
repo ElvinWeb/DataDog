@@ -12,7 +12,18 @@ const Infrastructure = () => {
               alt="serverless"
               className="img-fluid image-overlay img-top  d-xl-block d-none"
             />
-
+            <div className="infr-video video-poster">
+              <video
+                playsInline
+                autoPlay
+                muted
+                loop
+                className="img-fluid"
+                poster="https://imgix.datadoghq.com/img/home-hostmap-static.png?w=750&fit=crop&fm=jpg&auto=format&dpr=1.75&q=40"
+              >
+                <source src="https://imgix.datadoghq.com/video/Hostmap-compressed.mp4?fm=webm&fit=max" />
+              </video>
+            </div>
             <img
               src="https://imgix.datadoghq.com/img/home-hostmap-static.png?w=750&fit=crop&fm=jpg&auto=format&dpr=1.75&q=40"
               alt="hostmap"
