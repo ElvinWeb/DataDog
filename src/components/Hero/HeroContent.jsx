@@ -5,7 +5,7 @@ const HeroContent = () => {
     <div className="container main-content">
       <div className="row justify-content-center">
         <div className="col-12 col-lg-10">
-          <div className="content align-center">
+          <div className="content text-center">
             <h1 className="title">Modern monitoring & security</h1>
             <h3 className="sub-title">
               See inside any stack, any app, at any scale, anywhere.

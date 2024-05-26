@@ -1,9 +1,8 @@
 import Banner from "./components/Banner/Banner";
-import Carrer from "./components/Carrer/Carrer";
 import Hero from "./components/Hero/Hero";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
-import Blog from "./components/Blog/Blog";
 import LearnMore from "./components/LearnMore/LearnMore";
+import Row from "./components/Row/Row";
 
 function App() {
   return (
@@ -12,8 +11,7 @@ function App() {
       <Banner />
       <div className="main-container">
         <Infrastructure />
-        <Blog />
-        <Carrer />
+        <Row />
         <LearnMore />
       </div>
     </>

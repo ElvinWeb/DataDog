@@ -12,6 +12,7 @@ const Infrastructure = () => {
               alt="serverless"
               className="img-fluid image-overlay img-top  d-xl-block d-none"
             />
+
             <img
               src="https://imgix.datadoghq.com/img/home-hostmap-static.png?w=750&fit=crop&fm=jpg&auto=format&dpr=1.75&q=40"
               alt="hostmap"
@@ -27,19 +28,19 @@ const Infrastructure = () => {
             <article className="infr-header d-flex flex-column">
               <h2 className="title">Infrastructure</h2>
               <h6 className="sub-title">From overview to deep details, fast</h6>
-              <a href="./#" className="link">
-                LEARN MORE <i className="fa-solid fa-chevron-right"></i>
+              <a href="./#" className="link text-uppercase fw-semibold">
+                Learn More <i className="fa-solid fa-chevron-right"></i>
               </a>
             </article>
             <ul className="infr-list">
               {InfrastuctureList.map((item) => (
-                <li className="infr-item fw-semibold" key={item.id}>{item.title}</li>
+                <li className="infr-item fw-semibold" key={item.id}>
+                  {item.title}
+                </li>
               ))}
-              <div className="view-all">
-                <a href="./#" className="btn-outline btn-view">
-                  VIEW ALL FEATURES
-                </a>
-              </div>
+              <a href="./#" className="btn-outline btn-view">
+                VIEW ALL FEATURES
+              </a>
             </ul>
           </div>
         </div>

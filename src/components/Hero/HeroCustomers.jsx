@@ -14,7 +14,11 @@ const HeroCustomers = () => {
           <div className="company-logos d-flex justify-content-center">
             {CustomersList.map((customer) => (
               <a href="./#" className="logo" key={customer.id}>
-                <img src={customer.src} alt="" />
+                <img
+                  src={customer.src}
+                  className={`${customer.id === 3 ? "tw-w-11" : ""}`}
+                  alt={`customer-${customer.id}`}
+                />
               </a>
             ))}
           </div>

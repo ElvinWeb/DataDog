@@ -1,7 +1,7 @@
 import React from "react";
 
 const HeroAnimatedDash = () => {
-  return <div className="container main-animation-dash d-none">
+  return <div className="container main-dash d-none">
   <div className="row">
     <div className="col-12">
       <div className="mobile-dash">

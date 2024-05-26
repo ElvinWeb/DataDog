@@ -2,14 +2,14 @@ import "./Hero.css";
 import HeroCustomers from "./HeroCustomers";
 import HeroContent from "./HeroContent";
 import HeroVideoPoster from "./HeroVideoPoster";
-import HeroAnimatedDash from "./HeroAnimatedDash";
+import HeroDash from "./HeroDash";
 
 const Hero = () => {
   return (
     <header className="header main-banner">
       <HeroVideoPoster />
       <HeroContent />
-      <HeroAnimatedDash />
+      <HeroDash />
       <HeroCustomers />
     </header>
   );
