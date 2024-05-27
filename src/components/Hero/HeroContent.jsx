@@ -1,6 +1,7 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
-const HeroContent = () => {
+const HeroContent = ({ onShow }) => {
   return (
     <div className="container main-content">
       <div className="row justify-content-center">
@@ -14,12 +15,12 @@ const HeroContent = () => {
               <a href="./#" className="btn-free btn-gradient">
                 FREE TRIAL
               </a>
-              <a href="./#" className="btn-show btn-video">
+              <Button href="./#" className="btn-show btn-video" onClick={onShow}>
                 <div className="d-flex justify-content-center align-items-center">
                   <i className="fa-solid fa-circle-play me-1"></i>
                   SEE THE PLATFORM
                 </div>
-              </a>
+              </Button>
             </div>
           </div>
         </div>

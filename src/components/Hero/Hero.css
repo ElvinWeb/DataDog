@@ -56,6 +56,9 @@ header {
   background: linear-gradient(45deg, #c024b6 0%, #3023ae 100%);
   border: none;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-gradient:hover {
   background: #fff;

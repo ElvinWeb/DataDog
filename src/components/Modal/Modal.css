@@ -1,0 +1,32 @@
+.video-box,
+.video-box video,
+.video-box video source {
+  width: 100%;
+}
+.modal-backdrop {
+  --bs-backdrop-opacity: 1 !important;
+}
+.modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+}
+@media only screen and (min-width: 576px) {
+  .modal .modal-dialog {
+    max-width: 650px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .modal .modal-dialog {
+    max-width: 900px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .modal .modal-dialog {
+    max-width: 1140px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .modal {
+    top: 100px;
+  }
+}
