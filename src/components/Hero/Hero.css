@@ -2,24 +2,25 @@ header {
   background-repeat: repeat-y;
   background-position: 50% 0;
   background-image: url("../../images/bg_gradient_956.jpg");
-  padding-bottom: 30px;
   position: relative;
 }
 .header .main-content {
   position: relative;
 }
 .header .main-customers {
-  padding: 50px 0px;
   position: absolute;
-  bottom: -20px;
-  left: 90px;
+  bottom: 0px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
 }
 .main-customers .title {
   font-size: 13px;
   line-height: 16px;
 }
 .content {
-  padding-top: 40px;
+  padding-top: 25px;
 }
 .content .title {
   font-size: 63px;
@@ -61,7 +62,7 @@ header {
   justify-content: center;
 }
 .btn-gradient:hover {
-  background: #fff;
+  background: transparent;
   border: 1px solid #c024b6;
   color: #c024b6;
 }
@@ -96,7 +97,7 @@ header {
 .header .video-poster {
   overflow: hidden;
   position: absolute;
-  top: -10px;
+  top: -40px;
   left: 0;
   width: 100%;
   height: 956.25px;
@@ -124,7 +125,7 @@ header {
     padding: 11px 20px 12px;
   }
   .header {
-    height: 940px;
+    height: 850px;
   }
   .company-logos {
     gap: 2.75rem;
@@ -137,9 +138,10 @@ header {
     height: 970px;
   }
   .content {
-    padding-top: 76px;
+    padding-top: 45px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .company-logos {
     gap: 3.75rem;
@@ -165,11 +167,7 @@ header {
     flex-wrap: nowrap;
   }
   .header .main-customers {
-    bottom: 0px;
-    padding-top: 0;
-    padding-bottom: 50px;
-    bottom: 15px;
-    left: 40px;
+    position: relative;
   }
   .content .sub-title {
     font-size: 26px;
@@ -178,7 +176,12 @@ header {
     width: 69%;
   }
   .header .video-poster {
-    top: -30px;
+    display: none;
+  }
+  .mobile-dash img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -186,15 +189,14 @@ header {
     flex-wrap: wrap;
   }
   .company-logos .logo {
-    width: 100px;
+    width: 120px;
   }
   .header .video-poster .video-bg {
     height: 920.25px;
   }
   .header .main-customers {
-    bottom: -25px;
-    left: 10px;
-    right: 0;
+    position: static;
+    margin-top: 10vw;
   }
   .content .title {
     font-size: 30px;
@@ -239,17 +241,22 @@ header {
   .main-content .button-group {
     align-items: center;
   }
-
+  .header .main-customers .row {
+    margin: 0;
+  }
   .header .main-customers {
     right: 0;
     left: -30px;
     bottom: 0px;
   }
   .company-logos .logo {
-    width: 90px;
+    width: 125px;
   }
   header {
     height: 870px;
+  }
+  .header .main-customers {
+    margin-top: 15vw;
   }
   .content .title {
     font-size: 32px;
@@ -260,8 +267,5 @@ header {
   }
   .main-content .button-group {
     bottom: -80vw;
-  }
-  .mobile-dash img {
-    margin-top: 25px;
   }
 }
